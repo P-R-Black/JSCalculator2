@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="Calculator JavaScript">
+    <link href="styles.css" rel="stylesheet">
+    <title>JavaScript Calculator</title>
+</head>
+
+<body>
+  <main class="calculator-grid">
+    <div class="output" >
+      <div  class="previous-operand input" id="secondaryDisplay"></div>
+      <div class="current-operand input" id="display">0</div>
+    </div>
+  <div class="keys">
+    <button id="clear" onClick="clearDisplay()">AC</button>
+    <button id="negative-value" onClick="updateDisplay('negative-value')">+/-</button>
+    <button>%</button>
+    <button id="divide" onClick="updateDisplay('divide')">÷</button>
+    <button id="seven" onClick="updateDisplay(7)">7</button>
+    <button id="eight" onClick="updateDisplay(8)">8</button>
+    <button id="nine" onClick="updateDisplay(9)">9</button>
+    <button id="multiply" onClick="updateDisplay('multiply')">*</button>
+    <button id="four" onClick="updateDisplay(4)">4</button>
+    <button id="five" onClick="updateDisplay(5)">5</button>
+    <button id="six" onClick="updateDisplay(6)">6</button>
+    <button id="subtract" onClick="updateDisplay('subtract')">-</button>
+    <button id="one" onClick="updateDisplay(1)">1</button>
+    <button id="two" onClick="updateDisplay(2)">2</button>
+    <button id="three" onClick="updateDisplay(3)">3</button>
+    <button id="add" onClick="updateDisplay('add')">+</button>
+    <button id="zero" onClick="updateDisplay(0)">0</button>
+    <button id="decimal" onClick="updateDisplay('decimal')">.</button>
+    <button id="equals"  class="span-two" onClick="updateDisplay('equals')">=</button>
+  </div>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
